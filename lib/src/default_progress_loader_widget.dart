@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 part of 'progress_loader.dart';
 
 /// This Default loader use an [AnimationController] to show a full-screen black overlay with opacity fading in and out,
