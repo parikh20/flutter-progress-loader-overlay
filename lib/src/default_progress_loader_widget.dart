@@ -55,8 +55,8 @@ class _DefaultProgressLoaderWidgetState
   @override
   Widget build(BuildContext context) => AnimatedBuilder(
         animation: animationController,
-        child: Container(
-          color: Colors.black.withOpacity(0.3),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Center(
             child: CircularProgressIndicator(),
           ),
